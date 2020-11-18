@@ -1,6 +1,5 @@
 import pandas as pd
 from yahoofinancials import YahooFinancials
-
 # import json
 from datetime import datetime, timedelta
 
@@ -53,3 +52,5 @@ for k, v in custom_data.items():
 
 df = pd.DataFrame(pd_dict)
 print(df)
+
+input("Enter any key to exit! ")
