@@ -1,4 +1,3 @@
-import pandas as pd
 from yahoofinancials import YahooFinancials
 import json
 from datetime import datetime, timedelta
