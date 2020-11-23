@@ -41,10 +41,22 @@ for company, cdata in stockdata.items():
 
 pt = PrettyTable()
 
-pt.field_names = ["Company","DMA"+DMA_DAYS,"Days>DMA"+DMA_DAYS, "Today>DMA"+DMA_DAYS,"Last10days>DMA"+DMA_DAYS]
+pt.field_names = [
+    "Company",
+    "DMA"+DMA_DAYS,
+    "Today>DMA"+DMA_DAYS,
+    "Days>DMA"+DMA_DAYS,
+    "Last10days>DMA"+DMA_DAYS
+]
 
 for name,data in custom_data.items():
-    row = [name, data["mean"], data["Days>DMA" + DMA_DAYS], data["Today>DMA" + DMA_DAYS], data["Last10days>DMA" + DMA_DAYS]]
+    row = [
+        name,
+        data["mean"],
+        data["Today>DMA" + DMA_DAYS],
+        data["Days>DMA" + DMA_DAYS],
+        data["Last10days>DMA" + DMA_DAYS]
+    ]
     pt.add_row(row)
 
 print(pt)
