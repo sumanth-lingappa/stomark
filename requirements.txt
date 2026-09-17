@@ -1,6 +1,6 @@
 beautifulsoup4==4.9.3
 prettytable==2.0.0
 pytz==2020.4
-soupsieve==2.0.1
+soupsieve==2.9
 wcwidth==0.2.5
 yahoofinancials==1.6
